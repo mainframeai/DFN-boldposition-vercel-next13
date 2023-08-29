@@ -40,7 +40,7 @@ export default function Home() {
         <h2 className={`mb-3 text-2xl font-semibold`}>
           Docs{" "}
           <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-            Test headline. This works quite fine
+            Test headline. This works quite fines
           </span>
         </h2>
       </div>
