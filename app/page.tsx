@@ -26,7 +26,7 @@ export default function Example() {
               className="dark:invert"
               width={100}
               height={24}
-              priority
+         
             />
             </a>
           </div>
