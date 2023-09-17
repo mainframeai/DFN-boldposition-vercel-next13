@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
+import client from '../lib/sanity';
+import Pets from '../component/pets';
 const navigation = [
   { name: 'Psge2', href: '/page2' },
   { name: 'Features', href: '#' },
@@ -10,7 +12,7 @@ const navigation = [
   { name: 'Company', href: '#' },
 ];
 
-export default function Example() {
+export default function Example({}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -33,6 +35,7 @@ export default function Example() {
               />
             </a>
           </div>
+
           <div className="flex lg:hidden">
             <button
               type="button"
@@ -146,7 +149,7 @@ export default function Example() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Data to enrich your online business! Christoph mag keine Cloud
+              Page2
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
@@ -167,6 +170,7 @@ export default function Example() {
             </div>
           </div>
         </div>
+
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
           aria-hidden="true">
